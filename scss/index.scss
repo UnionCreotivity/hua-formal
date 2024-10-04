@@ -822,8 +822,10 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 1%;
   background-color: white;
+  @media screen and (max-width: 1440px) {
+    height: 100vh;
+  }
   @include mobile {
     padding-top: 0%;
   }
@@ -834,11 +836,15 @@ section {
   justify-content: center;
   overflow: hidden;
   position: relative;
+  @media screen and (max-width: 1440px) {
+    height: 100%;
+  }
   @include mobile {
     height: 100%;
   }
 }
 .card3 .c3-slider .c3-content-box .c3-content {
+  height: 100%;
   @include mobile {
     height: 100%;
   }
@@ -1378,6 +1384,9 @@ section {
     margin-top: 7vw;
     padding-top: 2vw;
     margin-bottom: 7vw;
+    @media screen and (max-width: 1440px) {
+      margin-top: 12vw;
+    }
     @include mobile() {
       flex-direction: column;
       justify-content: center;
@@ -1529,7 +1538,13 @@ section {
     position: absolute;
     transform: translate(-50%, 0%);
     left: 50%;
-    top: 16%;
+    top: 3%;
+    width: 17vw;
+    @media screen and (max-width: 1440px) {
+      left: 50%;
+      top: 4%;
+      width: 15vw;
+    }
   }
   p {
     position: absolute;

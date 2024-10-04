@@ -814,8 +814,12 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 1%;
   background-color: white;
+}
+@media screen and (max-width: 1440px) {
+  .card3 .c3-slider {
+    height: 100vh;
+  }
 }
 @media all and (max-width: 1024px) {
   .card3 .c3-slider {
@@ -830,12 +834,20 @@ section {
   overflow: hidden;
   position: relative;
 }
+@media screen and (max-width: 1440px) {
+  .card3 .c3-slider .c3-content-box {
+    height: 100%;
+  }
+}
 @media all and (max-width: 1024px) {
   .card3 .c3-slider .c3-content-box {
     height: 100%;
   }
 }
 
+.card3 .c3-slider .c3-content-box .c3-content {
+  height: 100%;
+}
 @media all and (max-width: 1024px) {
   .card3 .c3-slider .c3-content-box .c3-content {
     height: 100%;
@@ -1386,6 +1398,11 @@ section {
   padding-top: 2vw;
   margin-bottom: 7vw;
 }
+@media screen and (max-width: 1440px) {
+  .card-4-container .card-4-item-3 {
+    margin-top: 12vw;
+  }
+}
 @media all and (max-width: 1024px) {
   .card-4-container .card-4-item-3 {
     flex-direction: column;
@@ -1541,7 +1558,15 @@ section {
   position: absolute;
   transform: translate(-50%, 0%);
   left: 50%;
-  top: 16%;
+  top: 3%;
+  width: 17vw;
+}
+@media screen and (max-width: 1440px) {
+  .card-5-container .card-5-icon {
+    left: 50%;
+    top: 4%;
+    width: 15vw;
+  }
 }
 .card-5-container p {
   position: absolute;
